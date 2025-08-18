@@ -1,19 +1,97 @@
+/* Pastel Theme */
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #f4f4f4;
   margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffafc;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #ffd1dc, #d1e8ff);
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Sections */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #a86bc1;
+}
+
+/* About */
+.about ul {
+  list-style: none;
   padding: 0;
 }
-
-header {
-  background: #222;
-  color: #fff;
-  padding: 20px;
+.about li {
+  margin: 8px 0;
 }
 
-footer {
-  margin-top: 20px;
+/* Gallery */
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Planner */
+.planner form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 300px;
+  margin: auto;
+}
+.planner input, .planner button {
   padding: 10px;
-  background: #eee;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+.planner button {
+  background: #ffd1dc;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.planner button:hover {
+  background: #ffb6c1;
+}
+
+/* Memories */
+.memories .note {
+  background: #e8f0fe;
+  margin: 10px auto;
+  padding: 15px;
+  max-width: 500px;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  background: #f3e9ff;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 30px;
 }
