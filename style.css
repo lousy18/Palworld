@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Space 💕</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Space 💑</h1>
+    <nav>
+      <a href="#gallery">Gallery</a>
+      <a href="#documents">Documents</a>
+      <a href="#date-night">Date Night</a>
+      <a href="#memories">Memories</a>
+      <a href="#letters">Letters</a>
+      <a href="#playlist">Playlist</a>
+    </nav>
+  </header>
+
+  <section id="gallery">
+    <h2>📸 Our Gallery</h2>
+    <p>A collection of our favorite pictures.</p>
+    <div class="grid">
+      <img src="placeholder1.jpg" alt="Memory 1">
+      <img src="placeholder2.jpg" alt="Memory 2">
+    </div>
+  </section>
+
+  <section id="documents">
+    <h2>📂 Our Documents</h2>
+    <p>Special files and things we want to keep safe.</p>
+    <ul>
+      <li><a href="#">Love Letter.pdf</a></li>
+      <li><a href="#">Trip Plans.docx</a></li>
+    </ul>
+  </section>
+
+  <section id="date-night">
+    <h2>💌 Date Night Planner</h2>
+    <form>
+      <label>Where should we go?
+        <input type="text" name="place">
+      </label>
+      <label>What time?
+        <input type="time" name="time">
+      </label>
+      <label>Theme idea?
+        <input type="text" name="theme">
+      </label>
+      <button type="submit">Send Invite</button>
+    </form>
+  </section>
+
+  <section id="memories">
+    <h2>🌸 Memories</h2>
+    <p>A timeline of our journey together.</p>
+    <ul>
+      <li>July 2024 - First chats 💬</li>
+      <li>Oct 2024 - Our first meet 🌻</li>
+      <li>Feb 2025 - Valentine’s week ❤️</li>
+    </ul>
+  </section>
+
+  <section id="letters">
+    <h2>💌 Letters to Each Other</h2>
+    <p>Write and store personal notes here.</p>
+  </section>
+
+  <section id="playlist">
+    <h2>🎶 Our Playlist</h2>
+    <p>Songs that remind us of each other.</p>
+    <ul>
+      <li><a href="#">Song 1</a></li>
+      <li><a href="#">Song 2</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by Us</p>
+  </footer>
+</body>
+</html>
