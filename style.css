@@ -1,106 +1,113 @@
-/* General reset */
+/* General */
 body {
   margin: 0;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  background-color: #fff8f0; /* pastel cream */
+  font-family: 'Arial Rounded MT', sans-serif;
+  background: #fffafc;
   color: #444;
-  text-align: center;
+  scroll-behavior: smooth;
 }
 
-/* Header */
-header {
-  background-color: #ffd6e0; /* pastel pink */
-  padding: 2rem;
-  border-bottom: 3px solid #ffb6c1;
+h1, h2 {
+  color: #444;
 }
 
-header h1 {
-  margin: 0;
-  color: #5d3a58;
+p {
+  line-height: 1.6;
 }
 
-header p {
-  margin-top: 0.5rem;
-  color: #7a4e6c;
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffdce5;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 100;
 }
 
-/* Intro Section */
-.intro {
-  padding: 2rem;
-  background-color: #e7f0fd; /* pastel blue */
-  border-radius: 15px;
-  margin: 2rem auto;
-  max-width: 600px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-
-/* Quick Links */
-.quick-links {
-  padding: 2rem;
-}
-
-.quick-links ul {
+nav ul {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
   padding: 0;
 }
 
-.quick-links li {
-  margin: 1rem 0;
-}
-
-.quick-links a {
+nav a {
   text-decoration: none;
-  background-color: #c3f0ca; /* pastel green */
-  padding: 0.5rem 1.5rem;
-  border-radius: 25px;
-  color: #333;
-  transition: background 0.3s;
+  color: #444;
+  font-weight: bold;
 }
 
-.quick-links a:hover {
-  background-color: #a8e6b3;
+/* Hero */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #ffeef3, #e5f6ff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #ff9eb5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+/* Sections */
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 10%;
+  gap: 40px;
+}
+
+.section.alt {
+  background: #fdf1f4;
+}
+
+.section .text {
+  flex: 1;
+}
+
+.section .image {
+  flex: 1;
+}
+
+.section img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Love Notes */
+.notes {
+  padding: 100px 20px;
+  text-align: center;
+  background: #eafcff;
 }
 
 /* Footer */
 footer {
-  margin-top: 2rem;
-  padding: 1rem;
-  background-color: #ffd6e0;
-  border-top: 3px solid #ffb6c1;
-  font-size: 0.9rem;
-  color: #5d3a58;
-}
-/* Gallery */
-#gallery {
+  background: #ffdce5;
   text-align: center;
-  padding: 40px 20px;
-  background: #ffe6f0;
-  border-radius: 20px;
-  margin: 30px auto;
-  width: 90%;
-  max-width: 1000px;
-}
-
-#gallery h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #ff6f91;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
+  padding: 20px;
+  margin-top: 50px;
 }
