@@ -111,3 +111,29 @@ footer {
   padding: 20px;
   margin-top: 50px;
 }
+/* Full page section */
+.section {
+  min-height: 100vh; /* each section takes full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  gap: 40px;
+}
+
+/* Alternate left/right layouts */
+.section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.section img {
+  max-width: 45%;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.section .text {
+  max-width: 50%;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
