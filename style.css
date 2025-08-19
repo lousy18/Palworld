@@ -137,3 +137,53 @@ footer {
   font-size: 1.2rem;
   line-height: 1.6;
 }
+/* General Section Styling */
+section {
+  min-height: 100vh; /* full screen height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Alternate layouts */
+section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Section colors */
+#home {
+  background-color: #ffeef2; /* pastel pink */
+}
+
+#our-story {
+  background-color: #eaf8ff; /* pastel blue */
+}
+
+#gallery {
+  background-color: #fff8e7; /* pastel peach */
+}
+
+#milestones {
+  background-color: #f0fff0; /* pastel mint */
+}
+
+#contact {
+  background-color: #f9f0ff; /* pastel lavender */
+}
+
+/* Headings */
+section h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Text */
+section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 500px;
+}
