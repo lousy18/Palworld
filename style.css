@@ -29,8 +29,8 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: left;
-  gap: 20px;
+  justify-content: center;
+  gap: 50px;
   margin: 0;
   padding: 0;
 }
@@ -159,19 +159,23 @@ section:nth-child(even) {
 }
 
 #our-story {
-  background-color: #DECFFE; /* pale lavender */
+  background-color: #F3EBFB; /* anti flash white */
+  min-height: 500px
 }
 
 #gallery {
-  background-color: #F3E2FF; /* lavender */
+  background-color: #FAFAF7; /* lotion */
+  min-height: 500px;
 }
 
 #milestones {
-  background-color: #f0fff0; /* pastel mint */
+  background-color: #EAF1F4; /* bright gray */
+  min-height: 500px;
 }
 
 #contact {
-  background-color: #f9f0ff; /* pastel lavender */
+  background-color: #B8D1E5; /* beau blue */
+  min-height: 500px;
 }
 
 /* Headings */
