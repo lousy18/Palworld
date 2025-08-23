@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Arial Rounded MT', sans-serif;
-  background: #F3EBFB;
+  background: #fff; /* neutral so sections show their own colors */
   color: #444;
   scroll-behavior: smooth;
 }
@@ -41,23 +41,22 @@ nav a {
   font-weight: bold;
 }
 
-/* Hero */
-.hero {
-  height: 100vh;
-  background: linear-gradient(135deg, #ffeef3, #e5f6ff);
+/* Hero Section */
+#hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 20px;
+  padding: 100px 20px 50px; /* space for fixed nav */
+  background: linear-gradient(135deg, #ffeef3, #e5f6ff);
 }
 
-.hero h1 {
+#hero h1 {
   font-size: 3rem;
 }
 
-.hero p {
+#hero p {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
@@ -70,124 +69,62 @@ nav a {
   text-decoration: none;
 }
 
-/* Sections */
+/* General Section Styling */
 .section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 80px 10%;
   gap: 40px;
+  padding: 100px 10% 100px; /* dynamic height based on content */
+  flex-wrap: wrap; /* stacks gracefully on small screens */
 }
 
-.section.alt {
-  background: #fdf1f4;
-}
-
-.section .text {
-  flex: 1;
-}
-
-.section .image {
-  flex: 1;
-}
-
-.section img {
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* Love Notes */
-.notes {
-  padding: 100px 20px;
-  text-align: center;
-  background: #eafcff;
-}
-
-/* Footer */
-footer {
-  background: #ffdce5;
-  text-align: center;
-  padding: 20px;
-  margin-top: 50px;
-}
-/* Full page section */
-.section {
-  min-height: 100vh; /* each section takes full screen height */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px;
-  gap: 40px;
-}
-
-/* Alternate left/right layouts */
 .section:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-.section img {
-  max-width: 45%;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-
 .section .text {
-  max-width: 50%;
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
-/* General Section Styling */
-section {
-  min-height: 100vh; /* full screen height */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px;
-  font-family: 'Arial', sans-serif;
-  color: #333;
+  flex: 1 1 400px;
+  max-width: 500px;
 }
 
-/* Alternate layouts */
-section:nth-child(even) {
-  flex-direction: row-reverse;
+.section img {
+  flex: 1 1 300px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 15px;
+  /* Soft fade & subtle border for blending */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  background: rgba(255,255,255,0.4);
 }
 
-/* Section colors */
-#home {
-  background-color: #ffeef2; /* pastel pink */
-}
+/* Section Colors (pastel backgrounds) */
+#hero { background: linear-gradient(135deg, #ffeef3, #e5f6ff); }
+#story { background-color: #F3EBFB; }
+#gallery { background-color: #FAFAF7; }
+#milestones { background-color: #EAF1F4; }
+#contact { background-color: #B8D1E5; }
 
-#our-story {
-  background-color: #F3EBFB; /* anti flash white */
-  min-height: 500px
-}
-
-#gallery {
-  background-color: #FAFAF7; /* lotion */
-  min-height: 500px;
-}
-
-#milestones {
-  background-color: #EAF1F4; /* bright gray */
-  min-height: 500px;
-}
-
-#contact {
-  background-color: #B8D1E5; /* beau blue */
-  min-height: 500px;
-}
-
-/* Headings */
+/* Headings & Text */
 section h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #444;
 }
 
-/* Text */
 section p {
   font-size: 1.2rem;
   line-height: 1.8;
   max-width: 500px;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .section:nth-child(even) {
+    flex-direction: column;
+  }
 }
