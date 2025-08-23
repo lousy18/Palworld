@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Arial Rounded MT', sans-serif;
-  background: #fffafc;
+  background: #F3EBFB;
   color: #444;
   scroll-behavior: smooth;
 }
@@ -30,7 +30,7 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 75px;
   margin: 0;
   padding: 0;
 }
